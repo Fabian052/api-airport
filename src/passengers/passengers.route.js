@@ -13,10 +13,10 @@ export const router = Router();
 // Init features
 
 // Routes
-router.route("/passengers").get(findAllPassengers).post(createPassenger);
+router.route("/").get(findAllPassengers).post(createPassenger);
 
 router
-  .route("/passengers/:id")
+  .route("/:id")
   .get(findOnePassenger)
   .patch(updatePassenger)
   .delete(deletePassenger);
