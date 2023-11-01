@@ -26,12 +26,6 @@ const City = sequelize.define(
       allowNull: false,
       type: DataTypes.FLOAT(),
     },
-    createdAt: {
-      allowNull: false,
-      type: DataTypes.BOOLEAN,
-      defaultValue: "now()",
-      field: "created_at",
-    },
     status: {
       allowNull: false,
       type: DataTypes.BOOLEAN,

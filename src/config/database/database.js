@@ -17,7 +17,7 @@ export async function authenticate() {
 export async function syncUp() {
   try {
     await sequelize.sync();
-    console.log("Connection synced successfully. 😊");
+    console.log("Connection synced successfully. 😁");
   } catch (error) {
     throw new Error("Synchronization error: ", error);
   }
